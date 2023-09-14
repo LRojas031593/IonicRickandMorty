@@ -32,4 +32,16 @@ export class HomePage implements OnInit {
         console.log(err)},
     });
   }
+  searchCharacters() {
+    this.params.page = 1;
+    this.rymSv.getCharacters(this.params).subscribe({
+      next:(respuesta: any) => {
+        this.characters=respuesta.results;
+        
+      },
+      error: (err: any) => {
+      
+      },
+    });
+  }
 }

@@ -1,4 +1,5 @@
 .version{font-size: 14px;}
+
 ion-avatar{
     --border-radius: 10px;width: 100%;
     height: 100%;
@@ -6,4 +7,17 @@ ion-avatar{
 .name{
     font-size: 1.5em;
     font-weight: bold;
+}
+
+ion-card:hover{
+    cursor:pointer;
+    background: rgba(7,7,7,0.5);
+}
+
+ion-searchbar{
+    cursor:pointer;
+    --background: rgba(7,7,7,0.2);
+    color:white;
+    max-width: 350px;
+
 }

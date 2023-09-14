@@ -1,23 +1,27 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+
 import { IonicModule } from '@ionic/angular';
-import { HomePageRoutingModule } from './home-routing.module';
-import { HomePage } from './home.page';
+
+import { CharacterDetailPageRoutingModule } from './character-detail-routing.module';
+
+import { CharacterDetailPage } from './character-detail.page';
+import { RouterModule } from '@angular/router';
 import { RickAndMortyService } from 'src/app/services/rick-and-morty.service';
 import { HttpClientModule } from '@angular/common/http';
-import { RouterModule } from '@angular/router';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule,
+    CharacterDetailPageRoutingModule,
     HttpClientModule,
     RouterModule
+
   ],
-  declarations: [HomePage],
+  declarations: [CharacterDetailPage],
   providers: [RickAndMortyService]
 })
-export class HomePageModule {}
+export class CharacterDetailPageModule {}
